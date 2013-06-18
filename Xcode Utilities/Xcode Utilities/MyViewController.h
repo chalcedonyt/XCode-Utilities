@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIView+MoveFrameUnderView.h"
+#import "UIView+Positioning.h"
 #import "PlaceholderWithTextView.h"
-
-@interface MyViewController : UIViewController
+#import "TTActionSheet.h"
+#import "TTAlertView.h"
+#import "UIView+SuperFinder.h"
+@interface MyViewController : UIViewController <TTActionSheetDelegate,TTAlertViewDelegate,PlaceholderWithTextViewDelegate>
 
 @end

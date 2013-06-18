@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Timothy Teoh. All rights reserved.
 //
 
-#import "UIView+MoveFrameUnderView.h"
+#import "UIView+Positioning.h"
 
 @implementation UIView (UIView_MoveFrameUnderView)
 
@@ -20,5 +20,18 @@
 - (void)moveFrameUnderView:(UIView *)view byMargin:(float)margin
 {
     [self moveFrameToPoint:CGPointMake(self.frame.origin.x,view.frame.origin.y + view.frame.size.height + margin)];
+}
+- (void)replaceWithView:(UIView *)view
+{
+    CGRect selfFrame = self.frame;
+    view.frame = selfFrame;
+    [self.superview addSubview:view];
+    [self removeFromSuperview];
+}
+- (void)placeAtViewFrame:(UIView *)view
+{
+    CGRect viewFrame = view.frame;
+    self.frame = viewFrame;
+    [view.superview addSubview:self];
 }
 @end

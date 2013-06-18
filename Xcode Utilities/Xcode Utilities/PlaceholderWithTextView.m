@@ -32,6 +32,13 @@
     [self textViewDidChange:self.textView];
 }
 #pragma textview delegates - pass to delegate
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    if( [self.placeHolderDelegate respondsToSelector:@selector(textView:shouldChangeTextInRange:replacementText:)] ){
+        return [self.placeHolderDelegate textView:(UITextView *)textView shouldChangeTextInRange:range replacementText:text];
+    }
+    return false;
+}
 - (void)textViewDidBeginEditing:(UITextView *)textView
 {
     if( [self.placeHolderDelegate respondsToSelector:@selector(textViewDidEndEditing:)] ){

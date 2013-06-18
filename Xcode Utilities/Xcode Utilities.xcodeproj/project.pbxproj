@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		365EC1A817702FDB00346BEA /* TTActionSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365EC1A717702FDB00346BEA /* TTActionSheet.xib */; };
+		365EC1AA17702FE300346BEA /* TTAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365EC1A917702FE300346BEA /* TTAlertView.xib */; };
+		365EC1B11770300400346BEA /* TTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 365EC1B01770300400346BEA /* TTAlertView.m */; };
+		365EC1B41770303200346BEA /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 365EC1B31770303200346BEA /* UIView+Positioning.m */; };
+		365EC1B9177030CD00346BEA /* TTActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 365EC1B8177030CD00346BEA /* TTActionSheet.m */; };
+		365EC1BF1770311A00346BEA /* UIView+SuperFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 365EC1BE1770311A00346BEA /* UIView+SuperFinder.m */; };
+		365EC1C51770314A00346BEA /* NSArray+UIViewSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 365EC1C21770314A00346BEA /* NSArray+UIViewSort.m */; };
+		365EC1C61770314A00346BEA /* UILabel+SizeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 365EC1C41770314A00346BEA /* UILabel+SizeHelper.m */; };
+		365EC1C9177031F600346BEA /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 365EC1C7177031F600346BEA /* Button@2x.png */; };
+		365EC1CA177031F600346BEA /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 365EC1C8177031F600346BEA /* Button.png */; };
 		36AC7A511754A04C0087B2D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AC7A501754A04C0087B2D3 /* UIKit.framework */; };
 		36AC7A531754A04C0087B2D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AC7A521754A04C0087B2D3 /* Foundation.framework */; };
 		36AC7A551754A04C0087B2D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AC7A541754A04C0087B2D3 /* CoreGraphics.framework */; };
@@ -19,11 +29,26 @@
 		36AC7A6A1754A04C0087B2D3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36AC7A681754A04C0087B2D3 /* MainStoryboard.storyboard */; };
 		36AC7A761754A09B0087B2D3 /* PlaceholderWithTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AC7A741754A09B0087B2D3 /* PlaceholderWithTextView.m */; };
 		36AC7A771754A09B0087B2D3 /* PlaceholderWithTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36AC7A751754A09B0087B2D3 /* PlaceholderWithTextView.xib */; };
-		36AC7A7B1754A0B60087B2D3 /* UIView+MoveFrameUnderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AC7A7A1754A0B60087B2D3 /* UIView+MoveFrameUnderView.m */; };
 		36AC7A7F1754A0CB0087B2D3 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AC7A7E1754A0CB0087B2D3 /* MyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		365EC1A717702FDB00346BEA /* TTActionSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTActionSheet.xib; sourceTree = "<group>"; };
+		365EC1A917702FE300346BEA /* TTAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTAlertView.xib; sourceTree = "<group>"; };
+		365EC1AF1770300400346BEA /* TTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAlertView.h; sourceTree = "<group>"; };
+		365EC1B01770300400346BEA /* TTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAlertView.m; sourceTree = "<group>"; };
+		365EC1B21770303200346BEA /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
+		365EC1B31770303200346BEA /* UIView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
+		365EC1B7177030CD00346BEA /* TTActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTActionSheet.h; sourceTree = "<group>"; };
+		365EC1B8177030CD00346BEA /* TTActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTActionSheet.m; sourceTree = "<group>"; };
+		365EC1BD1770311A00346BEA /* UIView+SuperFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SuperFinder.h"; sourceTree = "<group>"; };
+		365EC1BE1770311A00346BEA /* UIView+SuperFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SuperFinder.m"; sourceTree = "<group>"; };
+		365EC1C11770314A00346BEA /* NSArray+UIViewSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+UIViewSort.h"; sourceTree = "<group>"; };
+		365EC1C21770314A00346BEA /* NSArray+UIViewSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+UIViewSort.m"; sourceTree = "<group>"; };
+		365EC1C31770314A00346BEA /* UILabel+SizeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SizeHelper.h"; sourceTree = "<group>"; };
+		365EC1C41770314A00346BEA /* UILabel+SizeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SizeHelper.m"; sourceTree = "<group>"; };
+		365EC1C7177031F600346BEA /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
+		365EC1C8177031F600346BEA /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
 		36AC7A4D1754A04C0087B2D3 /* Xcode Utilities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xcode Utilities.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36AC7A501754A04C0087B2D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		36AC7A521754A04C0087B2D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,8 +66,6 @@
 		36AC7A731754A09B0087B2D3 /* PlaceholderWithTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceholderWithTextView.h; sourceTree = "<group>"; };
 		36AC7A741754A09B0087B2D3 /* PlaceholderWithTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceholderWithTextView.m; sourceTree = "<group>"; };
 		36AC7A751754A09B0087B2D3 /* PlaceholderWithTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceholderWithTextView.xib; sourceTree = "<group>"; };
-		36AC7A791754A0B60087B2D3 /* UIView+MoveFrameUnderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MoveFrameUnderView.h"; sourceTree = "<group>"; };
-		36AC7A7A1754A0B60087B2D3 /* UIView+MoveFrameUnderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MoveFrameUnderView.m"; sourceTree = "<group>"; };
 		36AC7A7D1754A0CB0087B2D3 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		36AC7A7E1754A0CB0087B2D3 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +84,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		365EC1A617702FB800346BEA /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				365EC1A917702FE300346BEA /* TTAlertView.xib */,
+				365EC1A717702FDB00346BEA /* TTActionSheet.xib */,
+				36AC7A751754A09B0087B2D3 /* PlaceholderWithTextView.xib */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		365EC1AB17702FF200346BEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		365EC1BA177030D200346BEA /* TTAlert and ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				365EC1AF1770300400346BEA /* TTAlertView.h */,
+				365EC1B01770300400346BEA /* TTAlertView.m */,
+				365EC1B7177030CD00346BEA /* TTActionSheet.h */,
+				365EC1B8177030CD00346BEA /* TTActionSheet.m */,
+			);
+			name = "TTAlert and ActionSheet";
+			sourceTree = "<group>";
+		};
+		365EC1BB177030E500346BEA /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				365EC1C01770312400346BEA /* Other */,
+				365EC1BC1770311100346BEA /* UIView+SuperFinder */,
+				36AC7A781754A0A80087B2D3 /* PlaceholderWithTextView */,
+				36AC7A7C1754A0B90087B2D3 /* UIView+Positioning */,
+				365EC1BA177030D200346BEA /* TTAlert and ActionSheet */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		365EC1BC1770311100346BEA /* UIView+SuperFinder */ = {
+			isa = PBXGroup;
+			children = (
+				365EC1BD1770311A00346BEA /* UIView+SuperFinder.h */,
+				365EC1BE1770311A00346BEA /* UIView+SuperFinder.m */,
+			);
+			name = "UIView+SuperFinder";
+			sourceTree = "<group>";
+		};
+		365EC1C01770312400346BEA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				365EC1C11770314A00346BEA /* NSArray+UIViewSort.h */,
+				365EC1C21770314A00346BEA /* NSArray+UIViewSort.m */,
+				365EC1C31770314A00346BEA /* UILabel+SizeHelper.h */,
+				365EC1C41770314A00346BEA /* UILabel+SizeHelper.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		36AC7A441754A04C0087B2D3 = {
 			isa = PBXGroup;
 			children = (
@@ -91,13 +174,16 @@
 		36AC7A561754A04C0087B2D3 /* Xcode Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				36AC7A7C1754A0B90087B2D3 /* UIView+MoveFrameUnderView */,
-				36AC7A781754A0A80087B2D3 /* PlaceholderWithTextView */,
+				365EC1BB177030E500346BEA /* Libraries */,
+				365EC1AB17702FF200346BEA /* Views */,
+				365EC1A617702FB800346BEA /* Interface */,
 				36AC7A5F1754A04C0087B2D3 /* AppDelegate.h */,
 				36AC7A601754A04C0087B2D3 /* AppDelegate.m */,
 				36AC7A681754A04C0087B2D3 /* MainStoryboard.storyboard */,
 				36AC7A7D1754A0CB0087B2D3 /* MyViewController.h */,
 				36AC7A7E1754A0CB0087B2D3 /* MyViewController.m */,
+				365EC1C7177031F600346BEA /* Button@2x.png */,
+				365EC1C8177031F600346BEA /* Button.png */,
 				36AC7A571754A04C0087B2D3 /* Supporting Files */,
 			);
 			path = "Xcode Utilities";
@@ -122,18 +208,17 @@
 			children = (
 				36AC7A731754A09B0087B2D3 /* PlaceholderWithTextView.h */,
 				36AC7A741754A09B0087B2D3 /* PlaceholderWithTextView.m */,
-				36AC7A751754A09B0087B2D3 /* PlaceholderWithTextView.xib */,
 			);
 			name = PlaceholderWithTextView;
 			sourceTree = "<group>";
 		};
-		36AC7A7C1754A0B90087B2D3 /* UIView+MoveFrameUnderView */ = {
+		36AC7A7C1754A0B90087B2D3 /* UIView+Positioning */ = {
 			isa = PBXGroup;
 			children = (
-				36AC7A791754A0B60087B2D3 /* UIView+MoveFrameUnderView.h */,
-				36AC7A7A1754A0B60087B2D3 /* UIView+MoveFrameUnderView.m */,
+				365EC1B21770303200346BEA /* UIView+Positioning.h */,
+				365EC1B31770303200346BEA /* UIView+Positioning.m */,
 			);
-			name = "UIView+MoveFrameUnderView";
+			name = "UIView+Positioning";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +274,11 @@
 			files = (
 				36AC7A5B1754A04C0087B2D3 /* InfoPlist.strings in Resources */,
 				36AC7A631754A04C0087B2D3 /* Default.png in Resources */,
+				365EC1A817702FDB00346BEA /* TTActionSheet.xib in Resources */,
+				365EC1C9177031F600346BEA /* Button@2x.png in Resources */,
 				36AC7A651754A04C0087B2D3 /* Default@2x.png in Resources */,
+				365EC1CA177031F600346BEA /* Button.png in Resources */,
+				365EC1AA17702FE300346BEA /* TTAlertView.xib in Resources */,
 				36AC7A671754A04C0087B2D3 /* Default-568h@2x.png in Resources */,
 				36AC7A6A1754A04C0087B2D3 /* MainStoryboard.storyboard in Resources */,
 				36AC7A771754A09B0087B2D3 /* PlaceholderWithTextView.xib in Resources */,
@@ -204,10 +293,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				36AC7A5D1754A04C0087B2D3 /* main.m in Sources */,
+				365EC1C51770314A00346BEA /* NSArray+UIViewSort.m in Sources */,
 				36AC7A611754A04C0087B2D3 /* AppDelegate.m in Sources */,
 				36AC7A761754A09B0087B2D3 /* PlaceholderWithTextView.m in Sources */,
-				36AC7A7B1754A0B60087B2D3 /* UIView+MoveFrameUnderView.m in Sources */,
+				365EC1BF1770311A00346BEA /* UIView+SuperFinder.m in Sources */,
+				365EC1C61770314A00346BEA /* UILabel+SizeHelper.m in Sources */,
 				36AC7A7F1754A0CB0087B2D3 /* MyViewController.m in Sources */,
+				365EC1B41770303200346BEA /* UIView+Positioning.m in Sources */,
+				365EC1B9177030CD00346BEA /* TTActionSheet.m in Sources */,
+				365EC1B11770300400346BEA /* TTAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +424,7 @@
 				36AC7A721754A04C0087B2D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

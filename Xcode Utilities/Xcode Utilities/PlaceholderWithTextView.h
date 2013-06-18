@@ -16,7 +16,7 @@
 - (void)textViewDidChangeSelection:(UITextView *)textView;
 - (void)textViewDidEndEditing:(UITextView *)textView;
 - (BOOL)textViewShouldEndEditing:(UITextView *)textView;
-
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text;
 @end
 @interface PlaceholderWithTextView : UIView <UITextViewDelegate>
 @property (nonatomic, strong ) IBOutlet UITextView *textView;

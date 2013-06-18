@@ -36,9 +36,53 @@
     [self.view addSubview:self.placeholderTextView];
     [self.dummyView removeFromSuperview];
     
-	// Do any additional setup after loading the view.
+    //example of superfinder
+    UIView *v = (UIView *)[self.myLabel findSuperviewOfClass:[UIView class]];
+    if( v ){
+        NSLog(@"Label has a superview of class %@ at %@", [UIView class], NSStringFromCGRect(v.frame) );
+    }
+    if ( ![self.myLabel findSuperviewOfClass:[UIScrollView class]] ){
+       NSLog(@"Label has no superview of class %@", [UIScrollView class] );
+    }
+}
+- (IBAction)showActionsheet:(id)sender {
+    TTActionSheet *actionSheet = [[TTActionSheet alloc] initWithNibNamed:@"TTActionSheet" withTitle:@"What should we do?" withSender:nil];
+    actionSheet.actionSheetDelegate = self;
+    [actionSheet show];
+}
+- (IBAction)showAlert:(id)sender {
+    TTAlertView *alertView = [[TTAlertView alloc] initWithNibNamed:@"TTAlertView"];
+    alertView.alertViewDelegate = (id)self;
+    [alertView show];
+}
+#pragma mark PlaceholderWithTextView delegate
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    if( [text isEqualToString:@"\n"] ){
+        [textView resignFirstResponder];
+        return NO;
+    }
+    return YES;
+}
+#pragma mark TTAlertView delegate
+- (void)alertView:(TTAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex fromSender:(id)sender
+{
+    NSLog(@"Alert view button clicked: %d", buttonIndex );
+}
+- (void)alertViewDidCancel:(TTAlertView *)alertView
+{
+    NSLog(@"Alert view was cancelled");
 }
 
+#pragma mark TTActionSheet delegate
+- (void)actionSheet:(TTActionSheet *)view didDismissWithButtonIndex:(NSInteger)buttonIndex fromSender:(id)sender
+{
+    NSLog(@"Action sheet button clicked: %d", buttonIndex );
+}
+- (void)actionSheetDidCancel:(TTActionSheet *)actionSheet
+{
+    NSLog(@"Action sheet was cancelled");
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

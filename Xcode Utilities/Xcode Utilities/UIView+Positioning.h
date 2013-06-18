@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (UIView_MoveFrameUnderView)
+@interface UIView (UIView_Positioning)
 - (void)moveFrameToPoint:(CGPoint )point;
 - (void)moveFrameUnderView:(UIView *)view byMargin:(float)margin;
+- (void)replaceWithView:(UIView *)view;
+- (void)placeAtViewFrame:(UIView *)view;
 @end
